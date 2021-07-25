@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator App</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="container">
+
+        <div id="navbar">
+            <a id="active" href="#">Password Generator</a>
+        </div>    
+
+        <main>
+
+
+            <div id="optionContainer">
+                <button data-modal-target="#modal" class="passLevel">
+                    <i class="fas fa-wrench"></i>  
+                    Create Password
+                </button>
+            </div>
+            <!--<button data-modal-target="#modal">Open Modal</button>-->
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="title">Wow! Your password is ready!</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <h4 id="pass"></h4>
+              </div>
+            </div>
+            <div id="overlay"></div>
+ 
+        </main>
+    </div>
+
+    <footer>
+        <a target="_blank" href="https://github.com/Cinarozzi">
+            <p>Çınar Bozkurt <i class="fas fa-external-link-square-alt"></i></p>
+        </a>
+    </footer>
+
+  <!--Script-->
+    <script defer src="main.js"></script>
+    <script defer src="modal.js"></script>
+
+</body>
+</html>
